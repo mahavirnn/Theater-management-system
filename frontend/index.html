@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="subfolder/style.css">
+    <link rel="icon" href="data:,"> <!-- Suppress favicon.ico request -->
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="form-header">Sign Up</div>
+        <div class="form" id="form-container">
+            <!-- Sign Up Form -->
+            <form id="sign-up-form">
+                <div class="form-group">
+                    <label for="theater-name">Theater Name</label>
+                    <input type="text" id="theater-name" placeholder="Enter theater name">
+                </div>
+                <div class="form-group">
+                    <label for="user-name">User Name</label>
+                    <input type="text" id="user-name" placeholder="Enter user name">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="text" id="mobile" placeholder="Enter mobile number">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm password">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role">
+                        <option value="admin">Admin</option>
+                        <option value="worker">Worker</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+                <a href="#" class="toggle-link" onclick="switchToLogin()">Already have an account? Login</a>
+            </form>
+
+            <!-- Login Form -->
+            <form id="login-form" style="display: none;">
+                <div class="form-group">
+                    <label for="login-user-name">User Name</label>
+                    <input type="text" id="login-user-name" placeholder="Enter user name">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <a href="#" class="toggle-link">Forgot Password?</a>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+                <a href="#" class="toggle-link" onclick="switchToSignUp()">Don't have an account? Sign Up</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="subfolder/script.js"></script>
+</body>
+</html>
